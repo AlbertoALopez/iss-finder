@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
+import { Menu } from 'semantic-ui-react';
+import './_Header.scss';
+
 
 export default class Header extends Component {
+  state = {
+    activeItem: 'home',
+  }
   render() {
+    const { activeItem } = this.state;
     return (
-     <div>Meow</div>
+      <Menu
+        className="app-header"
+        inverted={true}
+        borderless={true}
+      >
+        <Menu.Item
+          name="home"
+          onClick={this.handleClickItem}
+        />
+      </Menu>
     );
   }
 }

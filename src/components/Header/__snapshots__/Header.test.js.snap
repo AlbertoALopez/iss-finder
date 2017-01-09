@@ -1,0 +1,10 @@
+exports[`test Header renders properly 1`] = `
+<div
+  className="ui borderless inverted app-header menu">
+  <div
+    className="item"
+    onClick={[Function]}>
+    Home
+  </div>
+</div>
+`;

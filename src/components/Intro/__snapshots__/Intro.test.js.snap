@@ -1,0 +1,12 @@
+exports[`test Intro renders correctly 1`] = `
+<div
+  className="ui text container">
+  <h2
+    className="ui header">
+    Where in the world is the ISS?
+  </h2>
+  <p>
+    Find out where the ISS is below.
+  </p>
+</div>
+`;
