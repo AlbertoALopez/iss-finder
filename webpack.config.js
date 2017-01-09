@@ -2,20 +2,24 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const PATHS = {
+  dist: path.join(__dirname, 'dist')
+};
+
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    // 'webpack-hot-middleware/client?reload=true',
+    'webpack/hot/dev-server' ,
     path.join(__dirname, './src/index.js'),
     path.join(__dirname, './src/stylesheets/main.scss')
   ],
   output: {
-    path: path.join(__dirname, './dist/'),
     filename: '[name].js',
+    path: PATHS.dist,
     publicPath: '/'
   },
   devServer: {
-    contentBase: './src/app/',
+    contentBase: PATHS.dist,
     historyApiFallback: true,
     inline: true,
     port: 3333,
@@ -38,7 +42,7 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'babel-loader',
+      loader: 'babel',
       query: {
         "presets": ["react", "es2015", "stage-0", "react-hmre"]
       }
