@@ -1,0 +1,7 @@
+exports[`test Intro renders correctly 1`] = `
+<div
+  className="ui segment">
+  
+  
+</div>
+`;
