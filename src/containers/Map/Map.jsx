@@ -20,7 +20,6 @@ export default class Map extends Component {
         return response.json();
       })
       .then((json) => {
-        console.log(json);
         issLat = json.iss_position.latitude;
         issLon = json.iss_position.longitude;
         that.setState({

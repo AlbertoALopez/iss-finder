@@ -55,6 +55,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+    },
+    { 
+      test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'
     }
     ]
   }
