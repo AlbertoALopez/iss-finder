@@ -46,6 +46,7 @@
     "react-dom": "^15.4.0",
     "react-flexbox-grid": "^0.10.2",
     "react-leaflet": "^1.0.0-rc.3",
+    "react-slick": "^0.14.5",
     "react-tap-event-plugin": "^2.0.1",
     "react-test-renderer": "^15.4.2",
     "rimraf": "^2.4.3",

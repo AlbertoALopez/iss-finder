@@ -15,7 +15,7 @@ api.getISSPosition = () => {
   return fetch('http://api.open-notify.org/iss-now.json');
 };
 
-api.getNumberofPeopleInSpace = () => {
+api.getNumberOfPeopleInSpace = () => {
   return fetch('http://api.open-notify.org/astros.json');
 };
 
