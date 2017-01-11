@@ -53,6 +53,11 @@ module.exports = {
             }, {
                 test: /\.scss$/,
                 loaders: ["style", "css", "sass"]
+                exclude: /flexboxgrid/
+            }, {
+              test: /\.css$/,
+              loader: 'style!css?modules',
+              include: /flexboxgrid/,
             }, {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')

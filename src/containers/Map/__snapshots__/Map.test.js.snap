@@ -1,7 +1,7 @@
-exports[`test Intro renders correctly 1`] = `
-<div
-  className="ui segment">
-  
-  
-</div>
+exports[`test Map container renders correctly 1`] = `
+<Segment>
+  <LeafletMap
+    issLat=""
+    issLon="" />
+</Segment>
 `;

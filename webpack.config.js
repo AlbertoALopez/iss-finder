@@ -50,13 +50,18 @@ module.exports = {
       test: /\.json?$/,
       loader: 'json'
     }, {
-        test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+      test: /\.scss$/,
+      loaders: ["style", "css", "sass"],
+      exclude: /flexboxgrid/
     }, {
       test: /\.css$/,
-      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
-    },
-    { 
+      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]',
+      exclude: /flexboxgrid/,
+    }, {
+      test: /\.css$/,
+      loader: 'style!css?modules',
+      include: /flexboxgrid/,
+    }, { 
       test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'
     }
     ]

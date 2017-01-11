@@ -1,6 +1,8 @@
 exports[`test Intro renders correctly 1`] = `
 <div
   className="ui text container">
+  <img
+    src="test-file-stub" />
   <h2
     className="ui header">
     Where in the world is the ISS?

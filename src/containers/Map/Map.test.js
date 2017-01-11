@@ -1,12 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Map from './Map.jsx';
 
-test('Intro renders correctly', () => {
-  const component = renderer.create(
+test('Map container renders correctly', () => {
+  const component = shallow(
     <Map />
   );
 
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  expect(toJson(component)).toMatchSnapshot();
 });

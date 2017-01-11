@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Segment } from 'semantic-ui-react';
 import api from '../../utils/api';
+import LeafletMap from '../../components/LeafletMap/LeafletMap.jsx';
 
 export default class Map extends Component {
   constructor() {
@@ -35,8 +36,10 @@ export default class Map extends Component {
   render() {
     return (
       <Segment>
-        {this.state.issLat}
-        {this.state.issLon}
+        <LeafletMap
+          issLat={this.state.issLat}
+          issLon={this.state.issLon}
+        />
       </Segment>
     );
   }
