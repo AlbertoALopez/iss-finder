@@ -15,10 +15,6 @@ export default class Header extends Component {
         inverted={true}
         borderless={true}
       >
-        <Menu.Item
-          name="home"
-          onClick={this.handleClickItem}
-        />
       </Menu>
     );
   }
