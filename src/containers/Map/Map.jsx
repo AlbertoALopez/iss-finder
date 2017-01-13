@@ -10,9 +10,11 @@ export default class Map extends Component {
       issLat: '',
       issLon: '',
     };
+
+    this.intervalId = null;
   }
 
-  componentDidMount() {
+  fetchData() {
     const that = this;
     let issLat;
     let issLon;
@@ -31,6 +33,11 @@ export default class Map extends Component {
       .catch((error) => {
         console.log(`Error fetching ISS data: ${error}`);
       });
+  }
+
+  componentDidMount() {
+    this.fetchData();
+    const intervalId = setInterval(() => this.fetchData(), 5000);
   }
 
   render() {

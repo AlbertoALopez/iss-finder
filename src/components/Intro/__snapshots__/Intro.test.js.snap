@@ -6,10 +6,10 @@ exports[`test Intro renders correctly 1`] = `
     src="test-file-stub" />
   <h2
     className="ui header">
-    Where in the world is the ISS?
+    Where in the world is the Internation Space Station?
   </h2>
   <p>
-    Find out where the ISS is below.
+    Find out where over earth is the ISS
   </p>
 </div>
 `;

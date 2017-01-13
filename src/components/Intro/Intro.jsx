@@ -8,8 +8,8 @@ const Intro = () => (
       className="iss-img"
       src={require('./iss-large.png')}
     />
-    <Header as="h2">Where in the world is the ISS?</Header>
-    <p>Find out where the ISS is below.</p>
+    <Header as="h2">Where in the world is the Internation Space Station?</Header>
+    <p>Find out where over earth is the ISS</p>
   </Container>
 );
 
