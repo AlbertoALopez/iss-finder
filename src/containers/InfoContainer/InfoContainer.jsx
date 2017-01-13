@@ -2,33 +2,33 @@ import React, { Component } from 'react';
 import api from '../../utils/api';
 import AstroInfo from '../../components/AstroInfo/AstroInfo.jsx';
 
+
 export default class InfoContainer extends Component {
   constructor() {
     super();
     this.state = {
-      numberOfPeople: '',
-      people: [],
+      numberOfPeopleInSpace: '',
+      peopleInSpace: [],
     };
   }
 
   componentDidMount() {
     const that = this;
-    let numberOfPeople;
-    let people;
+    let numberOfPeopleInSpace;
+    let peopleInSpace;
 
     api.getNumberOfPeopleInSpace()
       .then((response) => {
         return response.json();
       })
       .then((json) => {
-        let numberOfPeople = json.number;
-        let people = json.people;
+        numberOfPeopleInSpace = json.number;
+        peopleInSpace = json.people;
 
         that.setState({
-          numberOfPeople,
-          people,
+          numberOfPeopleInSpace,
+          peopleInSpace,
         });
-        console.log(this.state);
       })
       .catch((error) => {
         console.log(`Error fetching astro data: ${error}`);
@@ -38,8 +38,8 @@ export default class InfoContainer extends Component {
     return (
       <div>
         <AstroInfo
-          numberOfPeople={this.state.numberOfPeople}
-          people={this.state.people}
+          numberOfPeopleInSpace={this.state.numberOfPeopleInSpace}
+          peopleInSpace={this.state.peopleInSpace}
         />
       </div>
     );

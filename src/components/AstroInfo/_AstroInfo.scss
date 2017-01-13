@@ -1,7 +1,20 @@
+#info-container {
+  margin-bottom: 60px;
+}
+
+#astro-name-container {
+  line-height: 30px;
+  text-align: left;
+  width: 300px;
+  margin: 0 auto;
+}
+
 #slider {
   height: 100px;
   font-size: 20px;
-  .fact {
-    // font-size: 26px;
-  }
+}
+
+#astro-info {
+  margin: 30px 0px 30px 0px;
+  font-size: 20px;
 }
