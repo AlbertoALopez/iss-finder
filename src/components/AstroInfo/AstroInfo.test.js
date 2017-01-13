@@ -13,7 +13,10 @@ window.matchMedia = window.matchMedia || function() {
 
 test('AstroInfo renders properly', () => {
   const component = shallow(
-    <AstroInfo />
+    <AstroInfo
+      numberOfPeopleInSpace={0}
+      peopleInSpace={[]}
+    />
   );
 
   expect(toJson(component)).toMatchSnapshot();
