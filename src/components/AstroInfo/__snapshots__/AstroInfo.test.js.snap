@@ -1,0 +1,49 @@
+exports[`test AstroInfo renders properly 1`] = `
+<Segment>
+  <div
+    id="slider">
+    <p>
+      Did you know?
+    </p>
+    <Slider
+      autoplay={true}
+      autoplaySpeed={4000}
+      dots={false}
+      infinite={true}
+      slidesToScroll={1}
+      slidesToShow={1}
+      speed={500}>
+      <span
+        className="fact">
+        <p>
+          The ISS travels at 27,600 kilometres per hour
+        </p>
+      </span>
+      <span
+        className="fact">
+        <p>
+          The ISS has an orbit height of 400 kilometres
+        </p>
+      </span>
+      <span
+        className="fact">
+        <p>
+          The ISS makes a full rotation of the earth every one and half hours
+        </p>
+      </span>
+      <span
+        className="fact">
+        <p>
+          The ISS was launched on November 20, 1988
+        </p>
+      </span>
+      <span
+        className="fact">
+        <p>
+          The ISS has an orbit height of 400 kilometres
+        </p>
+      </span>
+    </Slider>
+  </div>
+</Segment>
+`;
